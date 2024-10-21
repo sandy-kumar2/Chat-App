@@ -9,6 +9,7 @@ const OtherUser = ({ user }) => {
     const selectedUserHandler = (user) => {
         dispatch(setSelectedUser(user));
     }
+    
     return (
         <>
             <div onClick={() => selectedUserHandler(user)} className={` ${selectedUser?._id === user?._id ? 'bg-zinc-200 text-black' : 'text-white'} flex gap-2 hover:text-black items-center hover:bg-zinc-200 rounded p-2 cursor-pointer`}>

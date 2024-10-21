@@ -17,8 +17,7 @@ const OtherUsers = () => {
                         <OtherUser key={user._id} user={user}/>
                     )
                 })
-            }
-            
+            }   
         </div>
     )
 }

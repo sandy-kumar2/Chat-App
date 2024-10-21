@@ -24,17 +24,16 @@ const Login = () => {
         withCredentials: true
       });
       navigate("/");
-      console.log(res);
       dispatch(setAuthUser(res.data));
     } catch (error) {
       toast.error(error.response.data.message);
-      console.log(error);
     }
     setUser({
       username: "",
       password: ""
     })
   }
+  
   return (
     <div className="min-w-96 mx-auto">
       <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100'>
