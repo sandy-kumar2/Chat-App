@@ -7,6 +7,7 @@ import { BASE_URL } from '..';
 const useGetMessages = () => {
     const {selectedUser} = useSelector(store=>store.user);
     const dispatch = useDispatch();
+    
     useEffect(() => {
         const fetchMessages = async () => {
             try {

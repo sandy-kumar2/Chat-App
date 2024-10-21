@@ -13,9 +13,8 @@ const Signup = () => {
     gender: "",
   });
   const navigate = useNavigate();
-  const handleCheckbox = (gender) => {
-    setUser({ ...user, gender });
-  }
+  const handleCheckbox = (gender) => {setUser({ ...user, gender })}
+
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     try {
@@ -41,7 +40,7 @@ const Signup = () => {
       gender: "",
     })
   }
-  
+
   return (
     <div className="min-w-96 mx-auto">
       <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100'>
